@@ -3,4 +3,4 @@ import "@hotwired/turbo-rails"
 import "./controllers"
 
 // サイト全体で無効にする
-Turbo.session.drive = false;]
+Turbo.session.drive = false;
