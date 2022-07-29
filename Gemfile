@@ -10,6 +10,10 @@ gem 'bcrypt'
 gem 'pry-rails'
 gem 'awesome_print'
 
+gem 'faker',                   '2.20.0'
+gem 'will_paginate',           '3.3.1'
+gem 'bootstrap-will_paginate', '1.0.0'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
