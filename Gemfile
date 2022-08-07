@@ -9,7 +9,7 @@ gem 'image_processing',           '1.12.2'
 gem 'mini_magick',                '4.9.5'
 gem 'active_storage_validations', '0.8.2'
 gem 'bcrypt'
-
+gem 'aws-sdk-s3', '1.48.0'
 gem 'pry-rails'
 gem 'awesome_print'
 
@@ -91,3 +91,4 @@ end
 group :production do
     gem 'pg', '1.1.4'
 end
+gem "webrick", "~> 1.7"
