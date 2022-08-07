@@ -13,6 +13,8 @@ Rails.application.routes.draw do
     resources :users
     resources :account_activations, only: %i[edit]
     resources :password_resets, only: %i[new create edit update]
+    resources :microposts,          only: [:create, :destroy]
+
 
     # get 'static_pages/home'
     # get 'static_pages/help'
