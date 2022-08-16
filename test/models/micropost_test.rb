@@ -3,7 +3,6 @@ require "test_helper"
 class MicropostTest < ActiveSupport::TestCase
     def setup
         @user = users(:michael)
-        # @micropost = Micropost.new(content: "Lorem ipsum", user_id: @user.id)
         @micropost = @user.microposts.build(content: "Lorem ipsum")
     end
 
@@ -36,7 +35,5 @@ class MicropostTest < ActiveSupport::TestCase
         assert_difference 'Micropost.count', -@user.microposts.size do
             @user.destroy
         end
-
-
     end
 end
